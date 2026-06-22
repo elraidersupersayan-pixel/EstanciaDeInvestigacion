@@ -1,0 +1,25 @@
+{
+    "model_type": "Easy Attention Transformer",
+    "input_dim": 1,
+    "seq_len": 3488,
+    "pred_len": 50,
+    "d_model": 256,
+    "num_heads": 16,
+    "learning_rate": 0.0001,
+    "epochs_planned": 500,
+    "peso_gradiente": 0.1,
+    "dropout_rate": 0.4,
+    "best_val_loss": 0.15119591715835756,
+    "salto_ventana_deslizante": 50,
+    "train_time_seconds": 34005.22552895546,
+    "train_time_minutes": 566.7537588159244,
+    "date_time": "2026-05-30 00:17:31",
+    "linea_idy": 2,
+    "num_train_samples": 142848,
+    "num_val_samples": 35712,
+    "gpu_name": "NVIDIA H200 NVL",
+    "norm_stats": {
+        "media": -0.0001256088144145906,
+        "std": 0.1829567849636078
+    }
+}

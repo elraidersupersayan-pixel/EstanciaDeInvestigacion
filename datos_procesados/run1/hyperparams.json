@@ -1,0 +1,8 @@
+{
+    "input_size": 5000,
+    "hidden_size": 2000,
+    "num_lstmlayers": 5,
+    "output_size": 50,
+    "learning_rate": 0.0005,
+    "epocs": 150
+}

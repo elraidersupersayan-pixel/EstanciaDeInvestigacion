@@ -1,0 +1,14 @@
+{
+    "input_size": 5000,
+    "hidden_size": 2000,
+    "num_lstmlayers": 3,
+    "output_size": 50,
+    "learning_rate": 0.0005,
+    "train_time_seconds": 3600.210670232773,
+    "best_val_loss": 0.01212696720742517,
+    "date_time": "2026-05-08 15:10:26",
+    "epocs": 150,
+    "gpu_name": "NVIDIA GeForce GTX 1650 with Max-Q Design",
+    "train_split_percentage": 0.8,
+    "num_train_samples": 4608
+}

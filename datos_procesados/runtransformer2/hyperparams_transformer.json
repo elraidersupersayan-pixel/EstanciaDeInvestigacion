@@ -1,0 +1,22 @@
+{
+    "model_type": "Easy Attention Transformer",
+    "input_dim": 1,
+    "seq_len": 500,
+    "pred_len": 50,
+    "d_model": 64,
+    "num_heads": 4,
+    "learning_rate": 0.0005,
+    "epochs_planned": 300,
+    "best_val_loss": 0.21808972681562105,
+    "train_time_seconds": 4447.486608982086,
+    "train_time_minutes": 74.1247768163681,
+    "date_time": "2026-05-13 15:39:56",
+    "linea_idy": 2,
+    "num_train_samples": 46080,
+    "num_val_samples": 11520,
+    "gpu_name": "NVIDIA GeForce GTX 1650 with Max-Q Design",
+    "norm_stats": {
+        "media": -0.0001256088144145906,
+        "std": 0.1829567849636078
+    }
+}
