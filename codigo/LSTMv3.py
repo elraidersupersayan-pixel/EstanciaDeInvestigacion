@@ -12,9 +12,44 @@ from torch.utils.data import TensorDataset, DataLoader
 # 1. Configuración de la ruta
 ruta_maestra = r"/home/antonio/Proyecto_Fluidos_AI/datos_procesados/process_data.h5"
 
-ruta_carpeta_guardar= r"/home/antonio/Proyecto_Fluidos_AI/datos_procesados/run1proLSTM"
+nombre_carpeta = input("Ingresa el nombre de la carpeta para guardar los resultados (se creará si no existe): ")
+
+# 2. Unes la ruta base con el nombre de la carpeta de forma segura
+ruta_carpeta_guardar = os.path.join(r"/home/antonio/Proyecto_Fluidos_AI/datos_procesados", nombre_carpeta)
+
+
 # Crear la carpeta si no existe
 os.makedirs(ruta_carpeta_guardar, exist_ok=True)
+
+def calcular_autocorrelacion(ruta_maestra, linea_idy, pasos_maximos=3000):
+    """
+    Calcula la longitud media de autocorrelación para una línea específica del archivo HDF5.
+    """
+    print(f"🔍 Calculando autocorrelación para la línea {linea_idy}...")
+    
+    # Leer solo la matriz necesaria para la línea seleccionada
+    with h5.File(ruta_maestra, 'r') as f:
+        matriz_plana = f['data_analisis']['u_fluc'][:, linea_idy, :]  # Forma: (T, N_spatial)
+        
+    dim_total = matriz_plana.shape[1]
+    mapa_coherencia_u = np.full(dim_total, pasos_maximos, dtype=int)
+    ya_encontrado_u = np.zeros(dim_total, dtype=bool)
+            
+    for k in range(1, pasos_maximos):
+        covarianza_u = np.sum(matriz_plana[:-k, :] * matriz_plana[k:, :], axis=0)
+        cruzaron_u = (covarianza_u < 0) & (~ya_encontrado_u)
+        mapa_coherencia_u[cruzaron_u] = k
+        ya_encontrado_u[cruzaron_u] = True
+        if np.all(ya_encontrado_u): 
+            break
+    # Calculamos la media de TODOS los puntos
+    if np.any(ya_encontrado_u):
+        media_autocorrelacion = int(np.mean(mapa_coherencia_u[ya_encontrado_u]))
+    else:
+        media_autocorrelacion = pasos_maximos
+                
+    print(f"✅ Longitud media de autocorrelación (Línea {linea_idy}): {media_autocorrelacion} time steps\n")
+    return media_autocorrelacion
 
 
 
@@ -60,14 +95,6 @@ def obtener_o_crear_datasets(ruta_maestra, train_dataset_pt, val_dataset_pt, sta
     y_data_raw = matriz_final[input_limit:, :]  # (25,  N_cols)
     print(f"  X_data_raw: {X_data_raw.shape}  |  y_data_raw: {y_data_raw.shape}")
 
-    # --- NORMALIZACIÓN ---
-    media_X = np.mean(X_data_raw)
-    std_X   = np.std(X_data_raw)
-    stats = {'media': media_X, 'std': std_X}
-
-    X_data = (X_data_raw - media_X) / std_X
-    y_data = (y_data_raw - media_X) / std_X
-
     # --- SPLIT TEMPORAL 80/20 ---
     # ⚠️ Con solapamiento, el split aleatorio por columna genera fuga de datos:
     # la ventana i y la i+1 comparten el 90% de timesteps. Usar split temporal
@@ -75,11 +102,22 @@ def obtener_o_crear_datasets(ruta_maestra, train_dataset_pt, val_dataset_pt, sta
     split_ventana = int(n_ventanas * 0.8)
     train_cols = split_ventana * N_spatial
 
+    X_train = X_data_raw[:, :train_cols]
+    X_val   = X_data_raw[:, train_cols:]
+    print(f"  X_train: {X_train.shape}  |  X_val: {X_val.shape}")
+
+        # --- NORMALIZACIÓN ---
+    media_X = np.mean(X_train)
+    std_X   = np.std(X_train)
+    stats = {'media': media_X, 'std': std_X}
+
+    X_data = (X_data_raw - media_X) / std_X
+    y_data = (y_data_raw - media_X) / std_X
+
     X_train_np = X_data[:, :train_cols]
     X_val_np   = X_data[:, train_cols:]
     y_train_np = y_data[:, :train_cols]
     y_val_np   = y_data[:, train_cols:]
-    print(f"  X_train: {X_train_np.shape}  |  X_val: {X_val_np.shape}")
 
     # --- TENSORES y DATASETS ---
     train_dataset = TensorDataset(
@@ -99,15 +137,15 @@ def obtener_o_crear_datasets(ruta_maestra, train_dataset_pt, val_dataset_pt, sta
 
 # Seleccionamos la línea o matriz que nos interesa 
 linea_idy=2
-windows_size=275
-step=25
-input_limit=250
+input_limit=int(calcular_autocorrelacion(ruta_maestra, linea_idy, pasos_maximos=3000)*0.5)  # 50% de la longitud media de autocorrelación
+step=int(input_limit * 0.1)  # 10% de input_limit
+windows_size=step+input_limit
 
 # --- MODO DE USO ---
 # Define los nombres de tus archivos
-f_train = 'train_dataset_pro1.pt'
-f_val = 'val_dataset_pro1.pt'
-f_stats = 'norm_stats_pro1.pt'
+f_train = 'train_dataset_pro2.pt'
+f_val = 'val_dataset_pro2.pt'
+f_stats = 'norm_stats_pro2.pt'
 
 # Llamas a la función
 train_dataset, val_dataset, stats_norm = obtener_o_crear_datasets(
