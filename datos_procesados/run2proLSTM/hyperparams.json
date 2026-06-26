@@ -1,0 +1,14 @@
+{
+    "input_size": 436,
+    "hidden_size": 256,
+    "num_lstmlayers": 3,
+    "output_size": 43,
+    "learning_rate": 0.0001,
+    "train_time_seconds": 58486.24300456047,
+    "best_val_loss": 0.08207365718092853,
+    "date_time": "2026-06-24 05:51:47",
+    "epocs": 200,
+    "gpu_name": "NVIDIA H200 NVL",
+    "train_split_percentage": 0.8,
+    "num_train_samples": 565344
+}

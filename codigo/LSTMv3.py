@@ -137,15 +137,15 @@ def obtener_o_crear_datasets(ruta_maestra, train_dataset_pt, val_dataset_pt, sta
 
 # Seleccionamos la línea o matriz que nos interesa 
 linea_idy=2
-input_limit=int(calcular_autocorrelacion(ruta_maestra, linea_idy, pasos_maximos=3000)*0.5)  # 50% de la longitud media de autocorrelación
+input_limit=int(calcular_autocorrelacion(ruta_maestra, linea_idy, pasos_maximos=3000)*0.15)  # 30% de la longitud media de autocorrelación
 step=int(input_limit * 0.1)  # 10% de input_limit
 windows_size=step+input_limit
 
 # --- MODO DE USO ---
 # Define los nombres de tus archivos
-f_train = 'train_dataset_pro2.pt'
-f_val = 'val_dataset_pro2.pt'
-f_stats = 'norm_stats_pro2.pt'
+f_train = 'train_dataset_pro3.pt'
+f_val = 'val_dataset_pro3.pt'
+f_stats = 'norm_stats_pro3.pt'
 
 # Llamas a la función
 train_dataset, val_dataset, stats_norm = obtener_o_crear_datasets(
@@ -241,10 +241,7 @@ def physics_loss(prediccion, real, alfa=0.5):
     # El alfa decide cuánto peso le das a "copiar bien las curvas"
     return mse_base + alfa * mse_derivada, mse_base
 
-# Al momento de calcular el error en tu bucle, en vez de:
-# loss = criterio(predicciones, y_batch)
-# Usa:
-# loss = physics_loss(predicciones, y_batch, alfa=0.5)
+
 optimizador = torch.optim.Adam(modelo.parameters(), lr=learning_rate)
 
 # Imprimimos el modelo para ver su estructura
