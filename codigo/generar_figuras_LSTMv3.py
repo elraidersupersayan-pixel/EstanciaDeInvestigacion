@@ -12,7 +12,7 @@ import os
 import gc  # <--- Importamos el recolector de basura
 import matplotlib.pyplot as plt
 
-ruta_carpeta_guardar = r"/home/antonio/Proyecto_Fluidos_AI/datos_procesados/run3proLSTM"
+ruta_carpeta_guardar = r"/home/antonio/Proyecto_Fluidos_AI/datos_procesados/run4proLSTM"
 ruta_maestra         = r"/home/antonio/Proyecto_Fluidos_AI/datos_procesados/process_data.h5"
 
 ruta_json = ruta_carpeta_guardar + "/hyperparams.json"

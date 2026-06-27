@@ -1,7 +1,11 @@
 Ingresa el nombre de la carpeta para guardar los resultados (se creará si no existe): 🔍 Calculando autocorrelación para la línea 2...
 ✅ Longitud media de autocorrelación (Línea 2): 872 time steps
 
-📦 Archivos detectados. Cargando datasets...
+  T=106000 | window_size=156 | step=26
+  Ventanas: 4071  (vs 679 sin solapamiento → ×5 más datos)
+  Forma de matriz_final: (156, 1172448)
+  X_data_raw: (130, 1172448)  |  y_data_raw: (26, 1172448)
+  X_train: (130, 937728)  |  X_val: (130, 234720)
 FluidoLSTM_Seq2Seq(
   (encoder): LSTM(1, 256, num_layers=3, batch_first=True, dropout=0.2)
   (decoder): LSTM(1, 256, num_layers=3, batch_first=True, dropout=0.2)
@@ -13,823 +17,822 @@ Entrenando en el dispositivo: cuda
 ------------------------------------------------------------
 
 📊 Época 1/200
-⭐ ¡Nuevo récord! La pérdida bajó de inf a 0.001390. Guardando...
-Época [01/200] | Train Loss (MSE): 0.010065 | Val Loss: 0.001390
-Tiempo de la época: 338.15 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de inf a 0.044916. Guardando...
+Época [01/200] | Train Loss (MSE): 0.079806 | Val Loss: 0.044916
+Tiempo de la época: 243.57 segundos
 
 📊 Época 2/200
-Época [02/200] | Train Loss (MSE): 0.003536 | Val Loss: 0.001495
-Tiempo de la época: 332.68 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.044916 a 0.036084. Guardando...
+Época [02/200] | Train Loss (MSE): 0.046423 | Val Loss: 0.036084
+Tiempo de la época: 246.84 segundos
 
 📊 Época 3/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.001390 a 0.000887. Guardando...
-Época [03/200] | Train Loss (MSE): 0.001190 | Val Loss: 0.000887
-Tiempo de la época: 339.07 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.036084 a 0.030459. Guardando...
+Época [03/200] | Train Loss (MSE): 0.037532 | Val Loss: 0.030459
+Tiempo de la época: 243.57 segundos
 
 📊 Época 4/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000887 a 0.000701. Guardando...
-Época [04/200] | Train Loss (MSE): 0.001340 | Val Loss: 0.000701
-Tiempo de la época: 340.08 segundos
+Época [04/200] | Train Loss (MSE): 0.033984 | Val Loss: 0.036407
+Tiempo de la época: 248.59 segundos
 
 📊 Época 5/200
-Época [05/200] | Train Loss (MSE): 0.000723 | Val Loss: 0.000861
-Tiempo de la época: 337.69 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.030459 a 0.021004. Guardando...
+Época [05/200] | Train Loss (MSE): 0.030258 | Val Loss: 0.021004
+Tiempo de la época: 247.38 segundos
 
 📊 Época 6/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000701 a 0.000587. Guardando...
-Época [06/200] | Train Loss (MSE): 0.002004 | Val Loss: 0.000587
-Tiempo de la época: 338.16 segundos
+Época [06/200] | Train Loss (MSE): 0.026458 | Val Loss: 0.041177
+Tiempo de la época: 244.79 segundos
 
 📊 Época 7/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000587 a 0.000301. Guardando...
-Época [07/200] | Train Loss (MSE): 0.000694 | Val Loss: 0.000301
-Tiempo de la época: 336.66 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.021004 a 0.019135. Guardando...
+Época [07/200] | Train Loss (MSE): 0.024203 | Val Loss: 0.019135
+Tiempo de la época: 246.91 segundos
 
 📊 Época 8/200
-Época [08/200] | Train Loss (MSE): 0.001423 | Val Loss: 0.000322
-Tiempo de la época: 336.87 segundos
+Época [08/200] | Train Loss (MSE): 0.023053 | Val Loss: 0.026261
+Tiempo de la época: 245.55 segundos
 
 📊 Época 9/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000301 a 0.000257. Guardando...
-Época [09/200] | Train Loss (MSE): 0.000523 | Val Loss: 0.000257
-Tiempo de la época: 335.12 segundos
+Época [09/200] | Train Loss (MSE): 0.021678 | Val Loss: 0.019138
+Tiempo de la época: 246.87 segundos
 
 📊 Época 10/200
-Época [10/200] | Train Loss (MSE): 0.000440 | Val Loss: 0.000532
-Tiempo de la época: 334.48 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.019135 a 0.017300. Guardando...
+Época [10/200] | Train Loss (MSE): 0.020240 | Val Loss: 0.017300
+Tiempo de la época: 245.13 segundos
 
 📊 Época 11/200
-Época [11/200] | Train Loss (MSE): 0.000431 | Val Loss: 0.000360
-Tiempo de la época: 332.17 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.017300 a 0.015105. Guardando...
+Época [11/200] | Train Loss (MSE): 0.019692 | Val Loss: 0.015105
+Tiempo de la época: 243.46 segundos
 
 📊 Época 12/200
-Época [12/200] | Train Loss (MSE): 0.001798 | Val Loss: 0.000434
-Tiempo de la época: 331.98 segundos
+Época [12/200] | Train Loss (MSE): 0.018808 | Val Loss: 0.015127
+Tiempo de la época: 245.16 segundos
 
 📊 Época 13/200
-Época [13/200] | Train Loss (MSE): 0.000384 | Val Loss: 0.000430
-Tiempo de la época: 330.70 segundos
+Época [13/200] | Train Loss (MSE): 0.017530 | Val Loss: 0.015314
+Tiempo de la época: 245.49 segundos
 
 📊 Época 14/200
-Época [14/200] | Train Loss (MSE): 0.000363 | Val Loss: 0.000271
-Tiempo de la época: 337.93 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.015105 a 0.015008. Guardando...
+Época [14/200] | Train Loss (MSE): 0.016860 | Val Loss: 0.015008
+Tiempo de la época: 246.61 segundos
 
 📊 Época 15/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000257 a 0.000218. Guardando...
-Época [15/200] | Train Loss (MSE): 0.000357 | Val Loss: 0.000218
-Tiempo de la época: 337.56 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.015008 a 0.014941. Guardando...
+Época [15/200] | Train Loss (MSE): 0.016421 | Val Loss: 0.014941
+Tiempo de la época: 245.27 segundos
 
 📊 Época 16/200
-Época [16/200] | Train Loss (MSE): 0.000667 | Val Loss: 0.000224
-Tiempo de la época: 337.77 segundos
+Época [16/200] | Train Loss (MSE): 0.015920 | Val Loss: 0.015812
+Tiempo de la época: 244.78 segundos
 
 📊 Época 17/200
-Época [17/200] | Train Loss (MSE): 0.000327 | Val Loss: 0.000465
-Tiempo de la época: 331.18 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.014941 a 0.014399. Guardando...
+Época [17/200] | Train Loss (MSE): 0.015638 | Val Loss: 0.014399
+Tiempo de la época: 244.09 segundos
 
 📊 Época 18/200
-Época [18/200] | Train Loss (MSE): 0.000299 | Val Loss: 0.000555
-Tiempo de la época: 336.65 segundos
+Época [18/200] | Train Loss (MSE): 0.015051 | Val Loss: 0.015696
+Tiempo de la época: 243.30 segundos
 
 📊 Época 19/200
-Época [19/200] | Train Loss (MSE): 0.000300 | Val Loss: 0.000232
-Tiempo de la época: 336.64 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.014399 a 0.012277. Guardando...
+Época [19/200] | Train Loss (MSE): 0.014845 | Val Loss: 0.012277
+Tiempo de la época: 244.09 segundos
 
 📊 Época 20/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000218 a 0.000204. Guardando...
-Época [20/200] | Train Loss (MSE): 0.000274 | Val Loss: 0.000204
-Tiempo de la época: 337.85 segundos
+Época [20/200] | Train Loss (MSE): 0.014432 | Val Loss: 0.015595
+Tiempo de la época: 238.21 segundos
 
 📊 Época 21/200
-Época [21/200] | Train Loss (MSE): 0.000291 | Val Loss: 0.000272
-Tiempo de la época: 338.86 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.012277 a 0.011654. Guardando...
+Época [21/200] | Train Loss (MSE): 0.014105 | Val Loss: 0.011654
+Tiempo de la época: 244.30 segundos
 
 📊 Época 22/200
-Época [22/200] | Train Loss (MSE): 0.000261 | Val Loss: 0.000280
-Tiempo de la época: 336.04 segundos
+Época [22/200] | Train Loss (MSE): 0.013834 | Val Loss: 0.012259
+Tiempo de la época: 244.97 segundos
 
 📊 Época 23/200
-Época [23/200] | Train Loss (MSE): 0.000637 | Val Loss: 0.000287
-Tiempo de la época: 331.71 segundos
+Época [23/200] | Train Loss (MSE): 0.013709 | Val Loss: 0.015117
+Tiempo de la época: 244.90 segundos
 
 📊 Época 24/200
-Época [24/200] | Train Loss (MSE): 0.000251 | Val Loss: 0.000255
-Tiempo de la época: 331.24 segundos
+Época [24/200] | Train Loss (MSE): 0.013325 | Val Loss: 0.012916
+Tiempo de la época: 247.29 segundos
 
 📊 Época 25/200
-Época [25/200] | Train Loss (MSE): 0.000245 | Val Loss: 0.000315
-Tiempo de la época: 332.24 segundos
+Época [25/200] | Train Loss (MSE): 0.013098 | Val Loss: 0.011739
+Tiempo de la época: 246.35 segundos
 
 📊 Época 26/200
-Época [26/200] | Train Loss (MSE): 0.000264 | Val Loss: 0.000219
-Tiempo de la época: 333.30 segundos
+Época [26/200] | Train Loss (MSE): 0.012910 | Val Loss: 0.012270
+Tiempo de la época: 246.17 segundos
 
 📊 Época 27/200
-Época [27/200] | Train Loss (MSE): 0.000241 | Val Loss: 0.000210
-Tiempo de la época: 335.61 segundos
+Época [27/200] | Train Loss (MSE): 0.012766 | Val Loss: 0.014428
+Tiempo de la época: 245.37 segundos
 
 📊 Época 28/200
-Época [28/200] | Train Loss (MSE): 0.000234 | Val Loss: 0.000340
-Tiempo de la época: 336.35 segundos
+Época [28/200] | Train Loss (MSE): 0.012697 | Val Loss: 0.012006
+Tiempo de la época: 244.63 segundos
 
 📊 Época 29/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000204 a 0.000160. Guardando...
-Época [29/200] | Train Loss (MSE): 0.000233 | Val Loss: 0.000160
-Tiempo de la época: 342.04 segundos
+Época [29/200] | Train Loss (MSE): 0.012458 | Val Loss: 0.011804
+Tiempo de la época: 246.21 segundos
 
 📊 Época 30/200
-Época [30/200] | Train Loss (MSE): 0.000217 | Val Loss: 0.000200
-Tiempo de la época: 337.56 segundos
+Época [30/200] | Train Loss (MSE): 0.012366 | Val Loss: 0.011834
+Tiempo de la época: 244.79 segundos
 
 📊 Época 31/200
-Época [31/200] | Train Loss (MSE): 0.000228 | Val Loss: 0.000193
-Tiempo de la época: 338.67 segundos
+Época [31/200] | Train Loss (MSE): 0.012266 | Val Loss: 0.011851
+Tiempo de la época: 247.16 segundos
 
 📊 Época 32/200
-Época [32/200] | Train Loss (MSE): 0.000219 | Val Loss: 0.000163
-Tiempo de la época: 337.90 segundos
+Época [32/200] | Train Loss (MSE): 0.015722 | Val Loss: 0.034853
+Tiempo de la época: 241.53 segundos
 
 📊 Época 33/200
-Época [33/200] | Train Loss (MSE): 0.000470 | Val Loss: 0.000201
-Tiempo de la época: 338.25 segundos
+Época [33/200] | Train Loss (MSE): 0.012238 | Val Loss: 0.012368
+Tiempo de la época: 243.43 segundos
 
 📊 Época 34/200
-Época [34/200] | Train Loss (MSE): 0.000217 | Val Loss: 0.000188
-Tiempo de la época: 336.99 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.011654 a 0.011176. Guardando...
+Época [34/200] | Train Loss (MSE): 0.012003 | Val Loss: 0.011176
+Tiempo de la época: 244.09 segundos
 
 📊 Época 35/200
-Época [35/200] | Train Loss (MSE): 0.000207 | Val Loss: 0.000161
-Tiempo de la época: 331.55 segundos
+Época [35/200] | Train Loss (MSE): 0.011868 | Val Loss: 0.012444
+Tiempo de la época: 245.59 segundos
 
 📊 Época 36/200
-Época [36/200] | Train Loss (MSE): 0.000249 | Val Loss: 0.000304
-Tiempo de la época: 336.16 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.011176 a 0.010809. Guardando...
+Época [36/200] | Train Loss (MSE): 0.011846 | Val Loss: 0.010809
+Tiempo de la época: 245.32 segundos
 
 📊 Época 37/200
-Época [37/200] | Train Loss (MSE): 0.000203 | Val Loss: 0.000298
-Tiempo de la época: 334.98 segundos
+Época [37/200] | Train Loss (MSE): 0.020789 | Val Loss: 0.013497
+Tiempo de la época: 245.80 segundos
 
 📊 Época 38/200
-Época [38/200] | Train Loss (MSE): 0.000435 | Val Loss: 0.000209
-Tiempo de la época: 336.92 segundos
+Época [38/200] | Train Loss (MSE): 0.011648 | Val Loss: 0.011617
+Tiempo de la época: 245.05 segundos
 
 📊 Época 39/200
-Época [39/200] | Train Loss (MSE): 0.000198 | Val Loss: 0.000179
-Tiempo de la época: 333.09 segundos
+Época [39/200] | Train Loss (MSE): 0.011708 | Val Loss: 0.011296
+Tiempo de la época: 243.96 segundos
 
 📊 Época 40/200
-Época [40/200] | Train Loss (MSE): 0.000197 | Val Loss: 0.000170
-Tiempo de la época: 331.58 segundos
+Época [40/200] | Train Loss (MSE): 0.014985 | Val Loss: 0.011208
+Tiempo de la época: 244.48 segundos
 
 📊 Época 41/200
-Época [41/200] | Train Loss (MSE): 0.000199 | Val Loss: 0.000189
-Tiempo de la época: 332.01 segundos
+Época [41/200] | Train Loss (MSE): 0.011537 | Val Loss: 0.011708
+Tiempo de la época: 245.17 segundos
 
 📊 Época 42/200
-Época [42/200] | Train Loss (MSE): 0.000198 | Val Loss: 0.000220
-Tiempo de la época: 331.50 segundos
+Época [42/200] | Train Loss (MSE): 0.013693 | Val Loss: 0.011373
+Tiempo de la época: 244.49 segundos
 
 📊 Época 43/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000160 a 0.000149. Guardando...
-Época [43/200] | Train Loss (MSE): 0.000193 | Val Loss: 0.000149
-Tiempo de la época: 335.15 segundos
+Época [43/200] | Train Loss (MSE): 0.012507 | Val Loss: 0.011150
+Tiempo de la época: 242.31 segundos
 
 📊 Época 44/200
-Época [44/200] | Train Loss (MSE): 0.000192 | Val Loss: 0.000179
-Tiempo de la época: 332.54 segundos
+Época [44/200] | Train Loss (MSE): 0.011312 | Val Loss: 0.011757
+Tiempo de la época: 243.30 segundos
 
 📊 Época 45/200
-Época [45/200] | Train Loss (MSE): 0.000318 | Val Loss: 0.000168
-Tiempo de la época: 335.91 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.010809 a 0.010686. Guardando...
+Época [45/200] | Train Loss (MSE): 0.014311 | Val Loss: 0.010686
+Tiempo de la época: 241.68 segundos
 
 📊 Época 46/200
-Época [46/200] | Train Loss (MSE): 0.000186 | Val Loss: 0.000179
-Tiempo de la época: 335.80 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.010686 a 0.010593. Guardando...
+Época [46/200] | Train Loss (MSE): 0.011158 | Val Loss: 0.010593
+Tiempo de la época: 243.86 segundos
 
 📊 Época 47/200
-Época [47/200] | Train Loss (MSE): 0.000195 | Val Loss: 0.000173
-Tiempo de la época: 339.31 segundos
+Época [47/200] | Train Loss (MSE): 0.011138 | Val Loss: 0.011674
+Tiempo de la época: 243.77 segundos
 
 📊 Época 48/200
-Época [48/200] | Train Loss (MSE): 0.000551 | Val Loss: 0.000219
-Tiempo de la época: 337.02 segundos
+Época [48/200] | Train Loss (MSE): 0.011149 | Val Loss: 0.010720
+Tiempo de la época: 246.51 segundos
 
 📊 Época 49/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000149 a 0.000148. Guardando...
-Época [49/200] | Train Loss (MSE): 0.000183 | Val Loss: 0.000148
-Tiempo de la época: 338.13 segundos
+Época [49/200] | Train Loss (MSE): 0.011017 | Val Loss: 0.011745
+Tiempo de la época: 243.82 segundos
 
 📊 Época 50/200
-Época [50/200] | Train Loss (MSE): 0.000191 | Val Loss: 0.000158
-Tiempo de la época: 341.16 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.010593 a 0.010542. Guardando...
+Época [50/200] | Train Loss (MSE): 0.011015 | Val Loss: 0.010542
+Tiempo de la época: 243.77 segundos
 
 📊 Época 51/200
-Época [51/200] | Train Loss (MSE): 0.000187 | Val Loss: 0.000164
-Tiempo de la época: 338.07 segundos
+Época [51/200] | Train Loss (MSE): 0.010923 | Val Loss: 0.011205
+Tiempo de la época: 245.17 segundos
 
 📊 Época 52/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000148 a 0.000143. Guardando...
-Época [52/200] | Train Loss (MSE): 0.000186 | Val Loss: 0.000143
-Tiempo de la época: 340.55 segundos
+Época [52/200] | Train Loss (MSE): 0.010882 | Val Loss: 0.011723
+Tiempo de la época: 244.05 segundos
 
 📊 Época 53/200
-Época [53/200] | Train Loss (MSE): 0.000188 | Val Loss: 0.000150
-Tiempo de la época: 340.04 segundos
+Época [53/200] | Train Loss (MSE): 0.014985 | Val Loss: 0.021319
+Tiempo de la época: 244.83 segundos
 
 📊 Época 54/200
-Época [54/200] | Train Loss (MSE): 0.000178 | Val Loss: 0.000144
-Tiempo de la época: 341.93 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.010542 a 0.010433. Guardando...
+Época [54/200] | Train Loss (MSE): 0.013185 | Val Loss: 0.010433
+Tiempo de la época: 243.93 segundos
 
 📊 Época 55/200
-Época [55/200] | Train Loss (MSE): 0.000180 | Val Loss: 0.000148
-Tiempo de la época: 336.74 segundos
+Época [55/200] | Train Loss (MSE): 0.010784 | Val Loss: 0.011463
+Tiempo de la época: 246.64 segundos
 
 📊 Época 56/200
-Época [56/200] | Train Loss (MSE): 0.000179 | Val Loss: 0.000150
-Tiempo de la época: 337.70 segundos
+Época [56/200] | Train Loss (MSE): 0.012506 | Val Loss: 0.010970
+Tiempo de la época: 241.50 segundos
 
 📊 Época 57/200
-Época [57/200] | Train Loss (MSE): 0.000178 | Val Loss: 0.000168
-Tiempo de la época: 332.79 segundos
+Época [57/200] | Train Loss (MSE): 0.010707 | Val Loss: 0.010575
+Tiempo de la época: 240.87 segundos
 
 📊 Época 58/200
-Época [58/200] | Train Loss (MSE): 0.000266 | Val Loss: 0.000178
-Tiempo de la época: 336.76 segundos
+Época [58/200] | Train Loss (MSE): 0.010662 | Val Loss: 0.010612
+Tiempo de la época: 243.29 segundos
 
 📊 Época 59/200
-Época [59/200] | Train Loss (MSE): 0.000175 | Val Loss: 0.000146
-Tiempo de la época: 339.76 segundos
+Época [59/200] | Train Loss (MSE): 0.013685 | Val Loss: 0.010460
+Tiempo de la época: 242.69 segundos
 
 📊 Época 60/200
-Época [60/200] | Train Loss (MSE): 0.000176 | Val Loss: 0.000184
-Tiempo de la época: 338.02 segundos
+Época [60/200] | Train Loss (MSE): 0.011529 | Val Loss: 0.010768
+Tiempo de la época: 243.51 segundos
 
 📊 Época 61/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000143 a 0.000130. Guardando...
-Época [61/200] | Train Loss (MSE): 0.000222 | Val Loss: 0.000130
-Tiempo de la época: 336.62 segundos
+Época [61/200] | Train Loss (MSE): 0.010519 | Val Loss: 0.011896
+Tiempo de la época: 243.02 segundos
 
 📊 Época 62/200
-Época [62/200] | Train Loss (MSE): 0.001231 | Val Loss: 0.000442
-Tiempo de la época: 338.57 segundos
+Época [62/200] | Train Loss (MSE): 0.010478 | Val Loss: 0.011353
+Tiempo de la época: 245.03 segundos
 
 📊 Época 63/200
-Época [63/200] | Train Loss (MSE): 0.000200 | Val Loss: 0.000169
-Tiempo de la época: 337.02 segundos
+Época [63/200] | Train Loss (MSE): 0.010472 | Val Loss: 0.012185
+Tiempo de la época: 245.29 segundos
 
 📊 Época 64/200
-Época [64/200] | Train Loss (MSE): 0.000172 | Val Loss: 0.000209
-Tiempo de la época: 338.93 segundos
+Época [64/200] | Train Loss (MSE): 0.010450 | Val Loss: 0.011257
+Tiempo de la época: 244.01 segundos
 
 📊 Época 65/200
-Época [65/200] | Train Loss (MSE): 0.000179 | Val Loss: 0.000167
-Tiempo de la época: 334.33 segundos
+Época [65/200] | Train Loss (MSE): 0.010341 | Val Loss: 0.010572
+Tiempo de la época: 239.62 segundos
 
 📊 Época 66/200
-Época [66/200] | Train Loss (MSE): 0.000210 | Val Loss: 0.000136
-Tiempo de la época: 333.35 segundos
+Época [66/200] | Train Loss (MSE): 0.010341 | Val Loss: 0.010936
+Tiempo de la época: 243.97 segundos
 
 📊 Época 67/200
-Época [67/200] | Train Loss (MSE): 0.000167 | Val Loss: 0.000146
-Tiempo de la época: 332.17 segundos
+Época [67/200] | Train Loss (MSE): 0.010286 | Val Loss: 0.011670
+Tiempo de la época: 245.71 segundos
 
 📊 Época 68/200
-Época [68/200] | Train Loss (MSE): 0.000898 | Val Loss: 0.000159
-Tiempo de la época: 331.69 segundos
+Época [68/200] | Train Loss (MSE): 0.010288 | Val Loss: 0.010826
+Tiempo de la época: 241.14 segundos
 
 📊 Época 69/200
-Época [69/200] | Train Loss (MSE): 0.000173 | Val Loss: 0.000167
-Tiempo de la época: 336.33 segundos
+Época [69/200] | Train Loss (MSE): 0.010275 | Val Loss: 0.010973
+Tiempo de la época: 244.62 segundos
 
 📊 Época 70/200
-Época [70/200] | Train Loss (MSE): 0.000175 | Val Loss: 0.000143
-Tiempo de la época: 338.24 segundos
+Época [70/200] | Train Loss (MSE): 0.010207 | Val Loss: 0.010863
+Tiempo de la época: 242.26 segundos
 
 📊 Época 71/200
-Época [71/200] | Train Loss (MSE): 0.000179 | Val Loss: 0.000147
-Tiempo de la época: 342.18 segundos
+Época [71/200] | Train Loss (MSE): 0.012577 | Val Loss: 0.113533
+Tiempo de la época: 246.60 segundos
 
 📊 Época 72/200
-Época [72/200] | Train Loss (MSE): 0.000173 | Val Loss: 0.000284
-Tiempo de la época: 336.72 segundos
+Época [72/200] | Train Loss (MSE): 0.017000 | Val Loss: 0.010868
+Tiempo de la época: 243.25 segundos
 
 📊 Época 73/200
-Época [73/200] | Train Loss (MSE): 0.000165 | Val Loss: 0.000155
-Tiempo de la época: 344.23 segundos
+Época [73/200] | Train Loss (MSE): 0.010104 | Val Loss: 0.010675
+Tiempo de la época: 245.05 segundos
 
 📊 Época 74/200
-Época [74/200] | Train Loss (MSE): 0.000165 | Val Loss: 0.000137
-Tiempo de la época: 344.20 segundos
+Época [74/200] | Train Loss (MSE): 0.010023 | Val Loss: 0.011355
+Tiempo de la época: 242.82 segundos
 
 📊 Época 75/200
-Época [75/200] | Train Loss (MSE): 0.000164 | Val Loss: 0.000219
-Tiempo de la época: 344.46 segundos
+Época [75/200] | Train Loss (MSE): 0.009998 | Val Loss: 0.011170
+Tiempo de la época: 242.92 segundos
 
 📊 Época 76/200
-Época [76/200] | Train Loss (MSE): 0.000162 | Val Loss: 0.000136
-Tiempo de la época: 350.03 segundos
+Época [76/200] | Train Loss (MSE): 0.016092 | Val Loss: 0.010491
+Tiempo de la época: 241.66 segundos
 
 📊 Época 77/200
-Época [77/200] | Train Loss (MSE): 0.000232 | Val Loss: 0.000154
-Tiempo de la época: 342.50 segundos
+Época [77/200] | Train Loss (MSE): 0.009913 | Val Loss: 0.011265
+Tiempo de la época: 243.71 segundos
 
 📊 Época 78/200
-Época [78/200] | Train Loss (MSE): 0.000159 | Val Loss: 0.000143
-Tiempo de la época: 342.53 segundos
+⭐ ¡Nuevo récord! La pérdida bajó de 0.010433 a 0.010388. Guardando...
+Época [78/200] | Train Loss (MSE): 0.009953 | Val Loss: 0.010388
+Tiempo de la época: 243.79 segundos
 
 📊 Época 79/200
-Época [79/200] | Train Loss (MSE): 0.000181 | Val Loss: 0.000135
-Tiempo de la época: 343.04 segundos
+Época [79/200] | Train Loss (MSE): 0.011144 | Val Loss: 0.011620
+Tiempo de la época: 243.18 segundos
 
 📊 Época 80/200
-Época [80/200] | Train Loss (MSE): 0.000156 | Val Loss: 0.000155
-Tiempo de la época: 340.11 segundos
+Época [80/200] | Train Loss (MSE): 0.009846 | Val Loss: 0.011997
+Tiempo de la época: 243.52 segundos
 
 📊 Época 81/200
-Época [81/200] | Train Loss (MSE): 0.000165 | Val Loss: 0.000156
-Tiempo de la época: 339.70 segundos
+Época [81/200] | Train Loss (MSE): 0.010958 | Val Loss: 0.010554
+Tiempo de la época: 242.57 segundos
 
 📊 Época 82/200
-Época [82/200] | Train Loss (MSE): 0.000170 | Val Loss: 0.000164
-Tiempo de la época: 330.52 segundos
+Época [82/200] | Train Loss (MSE): 0.011744 | Val Loss: 0.010914
+Tiempo de la época: 243.96 segundos
 
 📊 Época 83/200
-Época [83/200] | Train Loss (MSE): 0.000155 | Val Loss: 0.000141
-Tiempo de la época: 335.35 segundos
+Época [83/200] | Train Loss (MSE): 0.009768 | Val Loss: 0.011291
+Tiempo de la época: 244.07 segundos
 
 📊 Época 84/200
-Época [84/200] | Train Loss (MSE): 0.000155 | Val Loss: 0.000136
-Tiempo de la época: 337.30 segundos
+Época [84/200] | Train Loss (MSE): 0.009760 | Val Loss: 0.011120
+Tiempo de la época: 245.34 segundos
 
 📊 Época 85/200
-Época [85/200] | Train Loss (MSE): 0.000155 | Val Loss: 0.000176
-Tiempo de la época: 334.69 segundos
+Época [85/200] | Train Loss (MSE): 0.009721 | Val Loss: 0.011101
+Tiempo de la época: 245.48 segundos
 
 📊 Época 86/200
-Época [86/200] | Train Loss (MSE): 0.000165 | Val Loss: 0.000179
-Tiempo de la época: 335.91 segundos
+Época [86/200] | Train Loss (MSE): 0.009693 | Val Loss: 0.010480
+Tiempo de la época: 245.02 segundos
 
 📊 Época 87/200
-Época [87/200] | Train Loss (MSE): 0.000158 | Val Loss: 0.000154
-Tiempo de la época: 335.74 segundos
+Época [87/200] | Train Loss (MSE): 0.009668 | Val Loss: 0.011693
+Tiempo de la época: 245.31 segundos
 
 📊 Época 88/200
-Época [88/200] | Train Loss (MSE): 0.000322 | Val Loss: 0.000133
-Tiempo de la época: 342.02 segundos
+Época [88/200] | Train Loss (MSE): 0.013336 | Val Loss: 0.010795
+Tiempo de la época: 247.65 segundos
 
 📊 Época 89/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000130 a 0.000125. Guardando...
-Época [89/200] | Train Loss (MSE): 0.000150 | Val Loss: 0.000125
-Tiempo de la época: 341.27 segundos
+Época [89/200] | Train Loss (MSE): 0.009546 | Val Loss: 0.010831
+Tiempo de la época: 255.56 segundos
 
 📊 Época 90/200
-Época [90/200] | Train Loss (MSE): 0.000151 | Val Loss: 0.000193
-Tiempo de la época: 341.09 segundos
+Época [90/200] | Train Loss (MSE): 0.009560 | Val Loss: 0.011178
+Tiempo de la época: 247.42 segundos
 
 📊 Época 91/200
-Época [91/200] | Train Loss (MSE): 0.000153 | Val Loss: 0.000132
-Tiempo de la época: 341.33 segundos
+Época [91/200] | Train Loss (MSE): 0.010134 | Val Loss: 0.062522
+Tiempo de la época: 244.38 segundos
 
 📊 Época 92/200
-Época [92/200] | Train Loss (MSE): 0.000149 | Val Loss: 0.000144
-Tiempo de la época: 340.56 segundos
+Época [92/200] | Train Loss (MSE): 0.012061 | Val Loss: 0.011731
+Tiempo de la época: 247.75 segundos
 
 📊 Época 93/200
-Época [93/200] | Train Loss (MSE): 0.000150 | Val Loss: 0.000193
-Tiempo de la época: 339.68 segundos
+Época [93/200] | Train Loss (MSE): 0.009482 | Val Loss: 0.011209
+Tiempo de la época: 247.15 segundos
 
 📊 Época 94/200
-Época [94/200] | Train Loss (MSE): 0.000146 | Val Loss: 0.000155
-Tiempo de la época: 341.40 segundos
+Época [94/200] | Train Loss (MSE): 0.009431 | Val Loss: 0.010992
+Tiempo de la época: 246.13 segundos
 
 📊 Época 95/200
-Época [95/200] | Train Loss (MSE): 0.000145 | Val Loss: 0.000126
-Tiempo de la época: 341.99 segundos
+Época [95/200] | Train Loss (MSE): 0.009406 | Val Loss: 0.012269
+Tiempo de la época: 246.15 segundos
 
 📊 Época 96/200
-Época [96/200] | Train Loss (MSE): 0.000144 | Val Loss: 0.000126
-Tiempo de la época: 337.79 segundos
+Época [96/200] | Train Loss (MSE): 0.009352 | Val Loss: 0.013048
+Tiempo de la época: 242.13 segundos
 
 📊 Época 97/200
-Época [97/200] | Train Loss (MSE): 0.000143 | Val Loss: 0.000136
-Tiempo de la época: 336.09 segundos
+Época [97/200] | Train Loss (MSE): 0.009361 | Val Loss: 0.011139
+Tiempo de la época: 242.70 segundos
 
 📊 Época 98/200
-Época [98/200] | Train Loss (MSE): 0.000141 | Val Loss: 0.000189
-Tiempo de la época: 337.18 segundos
+Época [98/200] | Train Loss (MSE): 0.009342 | Val Loss: 0.010833
+Tiempo de la época: 245.31 segundos
 
 📊 Época 99/200
-Época [99/200] | Train Loss (MSE): 0.000140 | Val Loss: 0.000164
-Tiempo de la época: 336.59 segundos
+Época [99/200] | Train Loss (MSE): 0.009313 | Val Loss: 0.011321
+Tiempo de la época: 245.24 segundos
 
 📊 Época 100/200
-Época [100/200] | Train Loss (MSE): 0.000139 | Val Loss: 0.000132
-Tiempo de la época: 336.60 segundos
+Época [100/200] | Train Loss (MSE): 0.009275 | Val Loss: 0.010729
+Tiempo de la época: 244.72 segundos
 
 📊 Época 101/200
-Época [101/200] | Train Loss (MSE): 0.000137 | Val Loss: 0.000153
-Tiempo de la época: 337.35 segundos
+Época [101/200] | Train Loss (MSE): 0.009201 | Val Loss: 0.011743
+Tiempo de la época: 245.02 segundos
 
 📊 Época 102/200
-Época [102/200] | Train Loss (MSE): 0.000135 | Val Loss: 0.000163
-Tiempo de la época: 338.24 segundos
+Época [102/200] | Train Loss (MSE): 0.012099 | Val Loss: 0.011775
+Tiempo de la época: 244.42 segundos
 
 📊 Época 103/200
-Época [103/200] | Train Loss (MSE): 0.000134 | Val Loss: 0.000126
-Tiempo de la época: 339.88 segundos
+Época [103/200] | Train Loss (MSE): 0.009094 | Val Loss: 0.010783
+Tiempo de la época: 245.93 segundos
 
 📊 Época 104/200
-Época [104/200] | Train Loss (MSE): 0.000133 | Val Loss: 0.000138
-Tiempo de la época: 345.53 segundos
+Época [104/200] | Train Loss (MSE): 0.009169 | Val Loss: 0.010788
+Tiempo de la época: 243.61 segundos
 
 📊 Época 105/200
-Época [105/200] | Train Loss (MSE): 0.000132 | Val Loss: 0.000127
-Tiempo de la época: 343.68 segundos
+Época [105/200] | Train Loss (MSE): 0.009123 | Val Loss: 0.011182
+Tiempo de la época: 243.85 segundos
 
 📊 Época 106/200
-Época [106/200] | Train Loss (MSE): 0.000131 | Val Loss: 0.000126
-Tiempo de la época: 343.00 segundos
+Época [106/200] | Train Loss (MSE): 0.009083 | Val Loss: 0.011787
+Tiempo de la época: 240.60 segundos
 
 📊 Época 107/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000125 a 0.000108. Guardando...
-Época [107/200] | Train Loss (MSE): 0.000129 | Val Loss: 0.000108
-Tiempo de la época: 344.99 segundos
+Época [107/200] | Train Loss (MSE): 0.009092 | Val Loss: 0.011393
+Tiempo de la época: 244.67 segundos
 
 📊 Época 108/200
-Época [108/200] | Train Loss (MSE): 0.000127 | Val Loss: 0.000119
-Tiempo de la época: 343.58 segundos
+Época [108/200] | Train Loss (MSE): 0.008994 | Val Loss: 0.011039
+Tiempo de la época: 245.58 segundos
 
 📊 Época 109/200
-Época [109/200] | Train Loss (MSE): 0.000126 | Val Loss: 0.000111
-Tiempo de la época: 342.48 segundos
+Época [109/200] | Train Loss (MSE): 0.008983 | Val Loss: 0.010960
+Tiempo de la época: 244.09 segundos
 
 📊 Época 110/200
-Época [110/200] | Train Loss (MSE): 0.000123 | Val Loss: 0.000134
-Tiempo de la época: 339.20 segundos
+Época [110/200] | Train Loss (MSE): 0.008985 | Val Loss: 0.011396
+Tiempo de la época: 244.10 segundos
 
 📊 Época 111/200
-Época [111/200] | Train Loss (MSE): 0.000243 | Val Loss: 0.000152
-Tiempo de la época: 338.29 segundos
+Época [111/200] | Train Loss (MSE): 0.008930 | Val Loss: 0.010944
+Tiempo de la época: 238.04 segundos
 
 📊 Época 112/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000108 a 0.000097. Guardando...
-Época [112/200] | Train Loss (MSE): 0.000122 | Val Loss: 0.000097
-Tiempo de la época: 338.98 segundos
+Época [112/200] | Train Loss (MSE): 0.008924 | Val Loss: 0.011204
+Tiempo de la época: 240.83 segundos
 
 📊 Época 113/200
-Época [113/200] | Train Loss (MSE): 0.000121 | Val Loss: 0.000109
-Tiempo de la época: 337.14 segundos
+Época [113/200] | Train Loss (MSE): 0.010807 | Val Loss: 0.010652
+Tiempo de la época: 242.18 segundos
 
 📊 Época 114/200
-Época [114/200] | Train Loss (MSE): 0.000119 | Val Loss: 0.000108
-Tiempo de la época: 334.50 segundos
+Época [114/200] | Train Loss (MSE): 0.009301 | Val Loss: 0.011071
+Tiempo de la época: 243.03 segundos
 
 📊 Época 115/200
-Época [115/200] | Train Loss (MSE): 0.000118 | Val Loss: 0.000138
-Tiempo de la época: 334.56 segundos
+Época [115/200] | Train Loss (MSE): 0.008950 | Val Loss: 0.010879
+Tiempo de la época: 244.22 segundos
 
 📊 Época 116/200
-Época [116/200] | Train Loss (MSE): 0.000533 | Val Loss: 0.000680
-Tiempo de la época: 333.36 segundos
+Época [116/200] | Train Loss (MSE): 0.008772 | Val Loss: 0.011526
+Tiempo de la época: 243.75 segundos
 
 📊 Época 117/200
-Época [117/200] | Train Loss (MSE): 0.000193 | Val Loss: 0.000107
-Tiempo de la época: 338.93 segundos
+Época [117/200] | Train Loss (MSE): 0.008781 | Val Loss: 0.011126
+Tiempo de la época: 244.15 segundos
 
 📊 Época 118/200
-Época [118/200] | Train Loss (MSE): 0.000115 | Val Loss: 0.000125
-Tiempo de la época: 340.03 segundos
+Época [118/200] | Train Loss (MSE): 0.008737 | Val Loss: 0.011285
+Tiempo de la época: 243.28 segundos
 
 📊 Época 119/200
-Época [119/200] | Train Loss (MSE): 0.000114 | Val Loss: 0.000119
-Tiempo de la época: 339.29 segundos
+Época [119/200] | Train Loss (MSE): 0.008737 | Val Loss: 0.010826
+Tiempo de la época: 243.70 segundos
 
 📊 Época 120/200
-Época [120/200] | Train Loss (MSE): 0.000118 | Val Loss: 0.000127
-Tiempo de la época: 341.43 segundos
+Época [120/200] | Train Loss (MSE): 0.008663 | Val Loss: 0.011798
+Tiempo de la época: 243.95 segundos
 
 📊 Época 121/200
-Época [121/200] | Train Loss (MSE): 0.000111 | Val Loss: 0.000121
-Tiempo de la época: 340.54 segundos
+Época [121/200] | Train Loss (MSE): 0.008638 | Val Loss: 0.011626
+Tiempo de la época: 243.14 segundos
 
 📊 Época 122/200
-Época [122/200] | Train Loss (MSE): 0.000112 | Val Loss: 0.000128
-Tiempo de la época: 338.46 segundos
+Época [122/200] | Train Loss (MSE): 0.008575 | Val Loss: 0.011079
+Tiempo de la época: 242.17 segundos
 
 📊 Época 123/200
-Época [123/200] | Train Loss (MSE): 0.000112 | Val Loss: 0.000131
-Tiempo de la época: 339.49 segundos
+Época [123/200] | Train Loss (MSE): 0.008598 | Val Loss: 0.011205
+Tiempo de la época: 244.98 segundos
 
 📊 Época 124/200
-Época [124/200] | Train Loss (MSE): 0.000112 | Val Loss: 0.000210
-Tiempo de la época: 338.75 segundos
+Época [124/200] | Train Loss (MSE): 0.008561 | Val Loss: 0.011266
+Tiempo de la época: 243.83 segundos
 
 📊 Época 125/200
-Época [125/200] | Train Loss (MSE): 0.000111 | Val Loss: 0.000101
-Tiempo de la época: 338.83 segundos
+Época [125/200] | Train Loss (MSE): 0.008560 | Val Loss: 0.011094
+Tiempo de la época: 244.27 segundos
 
 📊 Época 126/200
-Época [126/200] | Train Loss (MSE): 0.000110 | Val Loss: 0.000132
-Tiempo de la época: 334.34 segundos
+Época [126/200] | Train Loss (MSE): 0.008473 | Val Loss: 0.011112
+Tiempo de la época: 246.01 segundos
 
 📊 Época 127/200
-Época [127/200] | Train Loss (MSE): 0.000109 | Val Loss: 0.000100
-Tiempo de la época: 336.09 segundos
+Época [127/200] | Train Loss (MSE): 0.008461 | Val Loss: 0.011981
+Tiempo de la época: 244.64 segundos
 
 📊 Época 128/200
-Época [128/200] | Train Loss (MSE): 0.000109 | Val Loss: 0.000101
-Tiempo de la época: 337.44 segundos
+Época [128/200] | Train Loss (MSE): 0.008454 | Val Loss: 0.011459
+Tiempo de la época: 244.58 segundos
 
 📊 Época 129/200
-Época [129/200] | Train Loss (MSE): 0.000113 | Val Loss: 0.000127
-Tiempo de la época: 337.14 segundos
+Época [129/200] | Train Loss (MSE): 0.008398 | Val Loss: 0.010815
+Tiempo de la época: 244.48 segundos
 
 📊 Época 130/200
-Época [130/200] | Train Loss (MSE): 0.000109 | Val Loss: 0.000099
-Tiempo de la época: 334.21 segundos
+Época [130/200] | Train Loss (MSE): 0.008392 | Val Loss: 0.011115
+Tiempo de la época: 244.96 segundos
 
 📊 Época 131/200
-Época [131/200] | Train Loss (MSE): 0.000721 | Val Loss: 0.000645
-Tiempo de la época: 335.62 segundos
+Época [131/200] | Train Loss (MSE): 0.008400 | Val Loss: 0.011290
+Tiempo de la época: 245.17 segundos
 
 📊 Época 132/200
-Época [132/200] | Train Loss (MSE): 0.000206 | Val Loss: 0.000126
-Tiempo de la época: 336.67 segundos
+Época [132/200] | Train Loss (MSE): 0.008313 | Val Loss: 0.011257
+Tiempo de la época: 244.61 segundos
 
 📊 Época 133/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000097 a 0.000092. Guardando...
-Época [133/200] | Train Loss (MSE): 0.000109 | Val Loss: 0.000092
-Tiempo de la época: 337.14 segundos
+Época [133/200] | Train Loss (MSE): 0.008309 | Val Loss: 0.012010
+Tiempo de la época: 243.20 segundos
 
 📊 Época 134/200
-Época [134/200] | Train Loss (MSE): 0.000106 | Val Loss: 0.000105
-Tiempo de la época: 338.52 segundos
+Época [134/200] | Train Loss (MSE): 0.008297 | Val Loss: 0.011232
+Tiempo de la época: 244.99 segundos
 
 📊 Época 135/200
-Época [135/200] | Train Loss (MSE): 0.000349 | Val Loss: 0.000125
-Tiempo de la época: 337.28 segundos
+Época [135/200] | Train Loss (MSE): 0.008245 | Val Loss: 0.011170
+Tiempo de la época: 245.45 segundos
 
 📊 Época 136/200
-Época [136/200] | Train Loss (MSE): 0.000127 | Val Loss: 0.000109
-Tiempo de la época: 335.71 segundos
+Época [136/200] | Train Loss (MSE): 0.008233 | Val Loss: 0.011324
+Tiempo de la época: 244.16 segundos
 
 📊 Época 137/200
-Época [137/200] | Train Loss (MSE): 0.000106 | Val Loss: 0.000103
-Tiempo de la época: 340.22 segundos
+Época [137/200] | Train Loss (MSE): 0.008187 | Val Loss: 0.011488
+Tiempo de la época: 244.25 segundos
 
 📊 Época 138/200
-Época [138/200] | Train Loss (MSE): 0.000106 | Val Loss: 0.000118
-Tiempo de la época: 339.64 segundos
+Época [138/200] | Train Loss (MSE): 0.008189 | Val Loss: 0.011582
+Tiempo de la época: 244.12 segundos
 
 📊 Época 139/200
-Época [139/200] | Train Loss (MSE): 0.000108 | Val Loss: 0.000134
-Tiempo de la época: 335.13 segundos
+Época [139/200] | Train Loss (MSE): 0.008154 | Val Loss: 0.010980
+Tiempo de la época: 244.44 segundos
 
 📊 Época 140/200
-Época [140/200] | Train Loss (MSE): 0.000105 | Val Loss: 0.000095
-Tiempo de la época: 335.89 segundos
+Época [140/200] | Train Loss (MSE): 0.008141 | Val Loss: 0.011342
+Tiempo de la época: 244.94 segundos
 
 📊 Época 141/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000092 a 0.000088. Guardando...
-Época [141/200] | Train Loss (MSE): 0.001022 | Val Loss: 0.000088
-Tiempo de la época: 335.50 segundos
+Época [141/200] | Train Loss (MSE): 0.008100 | Val Loss: 0.011250
+Tiempo de la época: 244.98 segundos
 
 📊 Época 142/200
-Época [142/200] | Train Loss (MSE): 0.000106 | Val Loss: 0.000115
-Tiempo de la época: 335.06 segundos
+Época [142/200] | Train Loss (MSE): 0.008069 | Val Loss: 0.011464
+Tiempo de la época: 244.75 segundos
 
 📊 Época 143/200
-Época [143/200] | Train Loss (MSE): 0.000105 | Val Loss: 0.000099
-Tiempo de la época: 334.49 segundos
+Época [143/200] | Train Loss (MSE): 0.007986 | Val Loss: 0.011200
+Tiempo de la época: 245.36 segundos
 
 📊 Época 144/200
-Época [144/200] | Train Loss (MSE): 0.000106 | Val Loss: 0.000100
-Tiempo de la época: 332.73 segundos
+Época [144/200] | Train Loss (MSE): 0.007993 | Val Loss: 0.012299
+Tiempo de la época: 241.01 segundos
 
 📊 Época 145/200
-Época [145/200] | Train Loss (MSE): 0.000105 | Val Loss: 0.000099
-Tiempo de la época: 333.96 segundos
+Época [145/200] | Train Loss (MSE): 0.007945 | Val Loss: 0.011223
+Tiempo de la época: 244.05 segundos
 
 📊 Época 146/200
-Época [146/200] | Train Loss (MSE): 0.000104 | Val Loss: 0.000097
-Tiempo de la época: 333.09 segundos
+Época [146/200] | Train Loss (MSE): 0.007951 | Val Loss: 0.011837
+Tiempo de la época: 244.64 segundos
 
 📊 Época 147/200
-Época [147/200] | Train Loss (MSE): 0.000104 | Val Loss: 0.000108
-Tiempo de la época: 327.67 segundos
+Época [147/200] | Train Loss (MSE): 0.007897 | Val Loss: 0.011085
+Tiempo de la época: 245.19 segundos
 
 📊 Época 148/200
-Época [148/200] | Train Loss (MSE): 0.000104 | Val Loss: 0.000095
-Tiempo de la época: 328.62 segundos
+Época [148/200] | Train Loss (MSE): 0.007909 | Val Loss: 0.010989
+Tiempo de la época: 244.24 segundos
 
 📊 Época 149/200
-Época [149/200] | Train Loss (MSE): 0.000103 | Val Loss: 0.000091
-Tiempo de la época: 327.43 segundos
+Época [149/200] | Train Loss (MSE): 0.007840 | Val Loss: 0.011525
+Tiempo de la época: 244.49 segundos
 
 📊 Época 150/200
-Época [150/200] | Train Loss (MSE): 0.000136 | Val Loss: 0.000093
-Tiempo de la época: 338.11 segundos
+Época [150/200] | Train Loss (MSE): 0.007806 | Val Loss: 0.011096
+Tiempo de la época: 244.74 segundos
 
 📊 Época 151/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000088 a 0.000088. Guardando...
-Época [151/200] | Train Loss (MSE): 0.000103 | Val Loss: 0.000088
-Tiempo de la época: 338.53 segundos
+Época [151/200] | Train Loss (MSE): 0.007831 | Val Loss: 0.011590
+Tiempo de la época: 243.65 segundos
 
 📊 Época 152/200
-Época [152/200] | Train Loss (MSE): 0.000103 | Val Loss: 0.000114
-Tiempo de la época: 337.46 segundos
+Época [152/200] | Train Loss (MSE): 0.007771 | Val Loss: 0.011213
+Tiempo de la época: 243.82 segundos
 
 📊 Época 153/200
-Época [153/200] | Train Loss (MSE): 0.000104 | Val Loss: 0.000097
-Tiempo de la época: 338.45 segundos
+Época [153/200] | Train Loss (MSE): 0.007748 | Val Loss: 0.011270
+Tiempo de la época: 244.13 segundos
 
 📊 Época 154/200
-Época [154/200] | Train Loss (MSE): 0.000102 | Val Loss: 0.000102
-Tiempo de la época: 337.91 segundos
+Época [154/200] | Train Loss (MSE): 0.007731 | Val Loss: 0.011817
+Tiempo de la época: 245.27 segundos
 
 📊 Época 155/200
-Época [155/200] | Train Loss (MSE): 0.000102 | Val Loss: 0.000111
-Tiempo de la época: 336.41 segundos
+Época [155/200] | Train Loss (MSE): 0.007688 | Val Loss: 0.011315
+Tiempo de la época: 244.13 segundos
 
 📊 Época 156/200
-Época [156/200] | Train Loss (MSE): 0.000103 | Val Loss: 0.000155
-Tiempo de la época: 333.44 segundos
+Época [156/200] | Train Loss (MSE): 0.007667 | Val Loss: 0.011421
+Tiempo de la época: 244.03 segundos
 
 📊 Época 157/200
-Época [157/200] | Train Loss (MSE): 0.000101 | Val Loss: 0.000107
-Tiempo de la época: 333.35 segundos
+Época [157/200] | Train Loss (MSE): 0.007605 | Val Loss: 0.012614
+Tiempo de la época: 243.83 segundos
 
 📊 Época 158/200
-Época [158/200] | Train Loss (MSE): 0.000101 | Val Loss: 0.000104
-Tiempo de la época: 334.15 segundos
+Época [158/200] | Train Loss (MSE): 0.010960 | Val Loss: 0.017545
+Tiempo de la época: 243.30 segundos
 
 📊 Época 159/200
-Época [159/200] | Train Loss (MSE): 0.000134 | Val Loss: 0.000090
-Tiempo de la época: 332.80 segundos
+Época [159/200] | Train Loss (MSE): 0.007980 | Val Loss: 0.011311
+Tiempo de la época: 244.95 segundos
 
 📊 Época 160/200
-Época [160/200] | Train Loss (MSE): 0.000101 | Val Loss: 0.000101
-Tiempo de la época: 334.66 segundos
+Época [160/200] | Train Loss (MSE): 0.009503 | Val Loss: 0.011736
+Tiempo de la época: 244.70 segundos
 
 📊 Época 161/200
-Época [161/200] | Train Loss (MSE): 0.000102 | Val Loss: 0.000119
-Tiempo de la época: 337.41 segundos
+Época [161/200] | Train Loss (MSE): 0.007513 | Val Loss: 0.011348
+Tiempo de la época: 245.61 segundos
 
 📊 Época 162/200
-Época [162/200] | Train Loss (MSE): 0.000100 | Val Loss: 0.000092
-Tiempo de la época: 331.99 segundos
+Época [162/200] | Train Loss (MSE): 0.007485 | Val Loss: 0.011584
+Tiempo de la época: 244.38 segundos
 
 📊 Época 163/200
-Época [163/200] | Train Loss (MSE): 0.000101 | Val Loss: 0.000093
-Tiempo de la época: 334.71 segundos
+Época [163/200] | Train Loss (MSE): 0.007464 | Val Loss: 0.011497
+Tiempo de la época: 244.47 segundos
 
 📊 Época 164/200
-Época [164/200] | Train Loss (MSE): 0.000101 | Val Loss: 0.000096
-Tiempo de la época: 338.76 segundos
+Época [164/200] | Train Loss (MSE): 0.007426 | Val Loss: 0.011471
+Tiempo de la época: 243.86 segundos
 
 📊 Época 165/200
-Época [165/200] | Train Loss (MSE): 0.000756 | Val Loss: 0.000106
-Tiempo de la época: 338.45 segundos
+Época [165/200] | Train Loss (MSE): 0.007404 | Val Loss: 0.011897
+Tiempo de la época: 244.26 segundos
 
 📊 Época 166/200
-Época [166/200] | Train Loss (MSE): 0.000103 | Val Loss: 0.000109
-Tiempo de la época: 337.09 segundos
+Época [166/200] | Train Loss (MSE): 0.007350 | Val Loss: 0.011065
+Tiempo de la época: 244.35 segundos
 
 📊 Época 167/200
-Época [167/200] | Train Loss (MSE): 0.000101 | Val Loss: 0.000103
-Tiempo de la época: 336.61 segundos
+Época [167/200] | Train Loss (MSE): 0.007376 | Val Loss: 0.011343
+Tiempo de la época: 243.71 segundos
 
 📊 Época 168/200
-Época [168/200] | Train Loss (MSE): 0.001205 | Val Loss: 0.000102
-Tiempo de la época: 329.17 segundos
+Época [168/200] | Train Loss (MSE): 0.007319 | Val Loss: 0.011688
+Tiempo de la época: 244.19 segundos
 
 📊 Época 169/200
-Época [169/200] | Train Loss (MSE): 0.000103 | Val Loss: 0.000107
-Tiempo de la época: 329.44 segundos
+Época [169/200] | Train Loss (MSE): 0.007308 | Val Loss: 0.011117
+Tiempo de la época: 244.27 segundos
 
 📊 Época 170/200
-⭐ ¡Nuevo récord! La pérdida bajó de 0.000088 a 0.000086. Guardando...
-Época [170/200] | Train Loss (MSE): 0.000100 | Val Loss: 0.000086
-Tiempo de la época: 334.02 segundos
+Época [170/200] | Train Loss (MSE): 0.007236 | Val Loss: 0.011196
+Tiempo de la época: 241.17 segundos
 
 📊 Época 171/200
-Época [171/200] | Train Loss (MSE): 0.000410 | Val Loss: 0.000102
-Tiempo de la época: 336.13 segundos
+Época [171/200] | Train Loss (MSE): 0.007218 | Val Loss: 0.012271
+Tiempo de la época: 244.36 segundos
 
 📊 Época 172/200
-Época [172/200] | Train Loss (MSE): 0.000139 | Val Loss: 0.000099
-Tiempo de la época: 335.84 segundos
+Época [172/200] | Train Loss (MSE): 0.007181 | Val Loss: 0.011157
+Tiempo de la época: 243.41 segundos
 
 📊 Época 173/200
-Época [173/200] | Train Loss (MSE): 0.000101 | Val Loss: 0.000098
-Tiempo de la época: 333.88 segundos
+Época [173/200] | Train Loss (MSE): 0.007144 | Val Loss: 0.011644
+Tiempo de la época: 243.64 segundos
 
 📊 Época 174/200
-Época [174/200] | Train Loss (MSE): 0.000100 | Val Loss: 0.000087
-Tiempo de la época: 336.10 segundos
+Época [174/200] | Train Loss (MSE): 0.007130 | Val Loss: 0.011257
+Tiempo de la época: 244.66 segundos
 
 📊 Época 175/200
-Época [175/200] | Train Loss (MSE): 0.000100 | Val Loss: 0.000106
-Tiempo de la época: 332.07 segundos
+Época [175/200] | Train Loss (MSE): 0.007115 | Val Loss: 0.011596
+Tiempo de la época: 243.97 segundos
 
 📊 Época 176/200
-Época [176/200] | Train Loss (MSE): 0.000099 | Val Loss: 0.000088
-Tiempo de la época: 338.25 segundos
+Época [176/200] | Train Loss (MSE): 0.007051 | Val Loss: 0.011241
+Tiempo de la época: 243.87 segundos
 
 📊 Época 177/200
-Época [177/200] | Train Loss (MSE): 0.000099 | Val Loss: 0.000093
-Tiempo de la época: 336.27 segundos
+Época [177/200] | Train Loss (MSE): 0.007050 | Val Loss: 0.011107
+Tiempo de la época: 244.26 segundos
 
 📊 Época 178/200
-Época [178/200] | Train Loss (MSE): 0.000099 | Val Loss: 0.000090
-Tiempo de la época: 333.38 segundos
+Época [178/200] | Train Loss (MSE): 0.006995 | Val Loss: 0.011275
+Tiempo de la época: 244.95 segundos
 
 📊 Época 179/200
-Época [179/200] | Train Loss (MSE): 0.000099 | Val Loss: 0.000104
-Tiempo de la época: 332.45 segundos
+Época [179/200] | Train Loss (MSE): 0.007026 | Val Loss: 0.011424
+Tiempo de la época: 244.24 segundos
 
 📊 Época 180/200
-Época [180/200] | Train Loss (MSE): 0.001043 | Val Loss: 0.000190
-Tiempo de la época: 333.88 segundos
+Época [180/200] | Train Loss (MSE): 0.006928 | Val Loss: 0.011392
+Tiempo de la época: 245.11 segundos
 
 📊 Época 181/200
-Época [181/200] | Train Loss (MSE): 0.001981 | Val Loss: 0.003670
-Tiempo de la época: 335.01 segundos
+Época [181/200] | Train Loss (MSE): 0.006910 | Val Loss: 0.011747
+Tiempo de la época: 245.13 segundos
 
 📊 Época 182/200
-Época [182/200] | Train Loss (MSE): 0.000261 | Val Loss: 0.000095
-Tiempo de la época: 337.18 segundos
+Época [182/200] | Train Loss (MSE): 0.006883 | Val Loss: 0.011914
+Tiempo de la época: 244.48 segundos
 
 📊 Época 183/200
-Época [183/200] | Train Loss (MSE): 0.000100 | Val Loss: 0.000091
-Tiempo de la época: 334.67 segundos
+Época [183/200] | Train Loss (MSE): 0.006851 | Val Loss: 0.010929
+Tiempo de la época: 244.27 segundos
 
 📊 Época 184/200
-Época [184/200] | Train Loss (MSE): 0.000099 | Val Loss: 0.000105
-Tiempo de la época: 334.85 segundos
+Época [184/200] | Train Loss (MSE): 0.006806 | Val Loss: 0.011235
+Tiempo de la época: 245.65 segundos
 
 📊 Época 185/200
-Época [185/200] | Train Loss (MSE): 0.000098 | Val Loss: 0.000096
-Tiempo de la época: 334.13 segundos
+Época [185/200] | Train Loss (MSE): 0.006757 | Val Loss: 0.011368
+Tiempo de la época: 246.80 segundos
 
 📊 Época 186/200
-Época [186/200] | Train Loss (MSE): 0.000258 | Val Loss: 0.000091
-Tiempo de la época: 331.29 segundos
+Época [186/200] | Train Loss (MSE): 0.006738 | Val Loss: 0.011651
+Tiempo de la época: 246.98 segundos
 
 📊 Época 187/200
-Época [187/200] | Train Loss (MSE): 0.000098 | Val Loss: 0.000104
-Tiempo de la época: 332.82 segundos
+Época [187/200] | Train Loss (MSE): 0.006687 | Val Loss: 0.011473
+Tiempo de la época: 246.56 segundos
 
 📊 Época 188/200
-Época [188/200] | Train Loss (MSE): 0.000098 | Val Loss: 0.000093
-Tiempo de la época: 332.59 segundos
+Época [188/200] | Train Loss (MSE): 0.006654 | Val Loss: 0.011548
+Tiempo de la época: 244.78 segundos
 
 📊 Época 189/200
-Época [189/200] | Train Loss (MSE): 0.000126 | Val Loss: 0.000114
-Tiempo de la época: 334.05 segundos
+Época [189/200] | Train Loss (MSE): 0.006713 | Val Loss: 0.011789
+Tiempo de la época: 244.28 segundos
 
 📊 Época 190/200
-Época [190/200] | Train Loss (MSE): 0.000098 | Val Loss: 0.000111
-Tiempo de la época: 333.25 segundos
+Época [190/200] | Train Loss (MSE): 0.006615 | Val Loss: 0.010914
+Tiempo de la época: 243.79 segundos
 
 📊 Época 191/200
-Época [191/200] | Train Loss (MSE): 0.000099 | Val Loss: 0.000099
-Tiempo de la época: 333.14 segundos
+Época [191/200] | Train Loss (MSE): 0.006589 | Val Loss: 0.011553
+Tiempo de la época: 243.63 segundos
 
 📊 Época 192/200
-Época [192/200] | Train Loss (MSE): 0.000097 | Val Loss: 0.000099
-Tiempo de la época: 336.83 segundos
+Época [192/200] | Train Loss (MSE): 0.006538 | Val Loss: 0.011195
+Tiempo de la época: 243.28 segundos
 
 📊 Época 193/200
-Época [193/200] | Train Loss (MSE): 0.000098 | Val Loss: 0.000102
-Tiempo de la época: 332.85 segundos
+Época [193/200] | Train Loss (MSE): 0.006521 | Val Loss: 0.011450
+Tiempo de la época: 242.78 segundos
 
 📊 Época 194/200
-Época [194/200] | Train Loss (MSE): 0.000096 | Val Loss: 0.000095
-Tiempo de la época: 336.85 segundos
+Época [194/200] | Train Loss (MSE): 0.006494 | Val Loss: 0.011210
+Tiempo de la época: 244.15 segundos
 
 📊 Época 195/200
-Época [195/200] | Train Loss (MSE): 0.000097 | Val Loss: 0.000095
-Tiempo de la época: 337.51 segundos
+Época [195/200] | Train Loss (MSE): 0.006448 | Val Loss: 0.011954
+Tiempo de la época: 244.26 segundos
 
 📊 Época 196/200
-Época [196/200] | Train Loss (MSE): 0.003538 | Val Loss: 0.002839
-Tiempo de la época: 337.11 segundos
+Época [196/200] | Train Loss (MSE): 0.006395 | Val Loss: 0.010799
+Tiempo de la época: 243.36 segundos
 
 📊 Época 197/200
-Época [197/200] | Train Loss (MSE): 0.000330 | Val Loss: 0.000107
-Tiempo de la época: 337.41 segundos
+Época [197/200] | Train Loss (MSE): 0.006384 | Val Loss: 0.011352
+Tiempo de la época: 243.73 segundos
 
 📊 Época 198/200
-Época [198/200] | Train Loss (MSE): 0.000107 | Val Loss: 0.000103
-Tiempo de la época: 338.03 segundos
+Época [198/200] | Train Loss (MSE): 0.006330 | Val Loss: 0.011358
+Tiempo de la época: 243.60 segundos
 
 📊 Época 199/200
-Época [199/200] | Train Loss (MSE): 0.000097 | Val Loss: 0.000098
-Tiempo de la época: 336.01 segundos
+Época [199/200] | Train Loss (MSE): 0.006306 | Val Loss: 0.011386
+Tiempo de la época: 244.14 segundos
 
 📊 Época 200/200
-Época [200/200] | Train Loss (MSE): 0.000097 | Val Loss: 0.000099
-Tiempo de la época: 335.66 segundos
+Época [200/200] | Train Loss (MSE): 0.006277 | Val Loss: 0.010948
+Tiempo de la época: 243.74 segundos
 ------------------------------------------------------------
 ✅ ¡Entrenamiento completado!
